@@ -18,15 +18,13 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
 
   <a
-    href={`https://wa.me/6285142910505?text=${encodeURIComponent(
-      `Hello Fit Wash,
+    href={`https://wa.me/6285142910505?text=${encodeURIComponent(`Hello Fit Wash,
 
-      I would like to schedule a laundry pickup.
+    I would like to schedule a laundry pickup.
 
-      Could you please let me know the available pickup times?
+    Could you please let me know the available pickup times?
 
-      Thank you.`
-          )}`}
+    Thank you.`)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="
@@ -47,13 +45,11 @@ export default function CTA() {
         </a>
 
         <a
-          href={`https://wa.me/6285142910505?text=${encodeURIComponent(
-            `Hello Fit Wash,
+          href={`https://wa.me/6285142910505?text=${encodeURIComponent(`Hello Fit Wash,
 
-      I would like to know more about your laundry services.
+        I would like to know more about your laundry services.
 
-      Thank you.`
-          )}`}
+        Thank you.`)}`}
           target="_blank"
           rel="noopener noreferrer"
           className="
