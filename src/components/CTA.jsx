@@ -17,33 +17,63 @@ export default function CTA() {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
 
-            <button
-              className="
-                bg-gray-900
-                text-white
-                px-8 py-4
-                rounded-xl
-                font-semibold
-                hover:opacity-90
-                transition
-              "
-            >
-              Book Pickup
-            </button>
+  <a
+    href={`https://wa.me/6285142910505?text=${encodeURIComponent(
+      `Hello Fit Wash,
 
-            <button
-              className="
-                bg-white
-                text-gray-900
-                px-8 py-4
-                rounded-xl
-                font-semibold
-              "
-            >
-              Contact Us
-            </button>
+      I would like to schedule a laundry pickup.
 
-          </div>
+      Could you please let me know the available pickup times?
+
+      Thank you.`
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            inline-flex
+            items-center
+            justify-center
+            bg-gray-900
+            text-white
+            px-8
+            py-4
+            rounded-xl
+            font-semibold
+            hover:opacity-90
+            transition
+          "
+        >
+          Book Pickup
+        </a>
+
+        <a
+          href={`https://wa.me/6285142910505?text=${encodeURIComponent(
+            `Hello Fit Wash,
+
+      I would like to know more about your laundry services.
+
+      Thank you.`
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            inline-flex
+            items-center
+            justify-center
+            bg-white
+            text-gray-900
+            px-8
+            py-4
+            rounded-xl
+            font-semibold
+            hover:bg-gray-100
+            transition
+          "
+        >
+          Contact Us
+        </a>
+
+      </div>
 
         </div>
 

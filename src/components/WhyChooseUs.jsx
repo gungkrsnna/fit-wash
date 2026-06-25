@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
     },
     {
       icon: <Truck size={22} />,
-      title: "Pickup & Delivery",
+      title: "Free Pickup & Delivery",
       description:
         "Convenient collection and delivery that fits your schedule.",
     },
@@ -25,23 +25,23 @@ export default function WhyChooseUs() {
       icon: <ShieldCheck size={22} />,
       title: "Quality Assurance",
       description:
-        "Each order is carefully inspected before delivery.",
+        "Every order is carefully inspected before delivery.",
     },
     {
       icon: <Clock3 size={22} />,
-      title: "Reliable Turnaround",
+      title: "Fast Turnaround",
       description:
-        "Fast and dependable service with clear delivery times.",
+        "Reliable express laundry with clear delivery times.",
     },
     {
       icon: <CheckCircle2 size={22} />,
-      title: "Eco-Friendly Products",
+      title: "Premium Detergent",
       description:
-        "Gentle cleaning solutions that are safe for fabrics.",
+        "High-quality detergent that is safe for fabrics and colors.",
     },
     {
       icon: <Headphones size={22} />,
-      title: "Dedicated Support",
+      title: "Friendly Support",
       description:
         "Responsive customer service whenever you need assistance.",
     },
@@ -54,75 +54,76 @@ export default function WhyChooseUs() {
     >
       <div className="container mx-auto px-5 lg:px-8">
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        {/* Heading */}
+        <div className="max-w-3xl mx-auto text-center">
 
-          {/* Left Side Image */}
-          <div>
+          <span className="text-yellow-500 font-semibold uppercase tracking-widest">
+            Why Choose Us
+          </span>
 
-            <img
-              src="/images/why-choose-us.jpg"
-              alt="Professional Laundry Team"
-              className="
-                w-full
-                h-[400px]
-                lg:h-[650px]
-                object-cover
-                rounded-[32px]
-                shadow-xl
-              "
-            />
-
-          </div>
-
-          {/* Right Side Content */}
-          <div>
-
-            <span className="text-yellow-500 font-semibold uppercase tracking-widest">
-              Why Choose Us
+          <h2 className="mt-4 text-4xl lg:text-5xl font-bold text-gray-900">
+            Laundry Service Built Around
+            <span className="text-yellow-500">
+              {" "}Quality & Convenience
             </span>
+          </h2>
 
-            <h2 className="mt-4 text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Laundry Service Built Around
-              Convenience & Quality
-            </h2>
+          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+            We combine professional garment care, modern equipment,
+            and reliable service to deliver the best laundry experience
+            for individuals, families, villas, and businesses.
+          </p>
 
-            <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-              We combine professional garment care,
-              modern equipment, and reliable service
-              to deliver a seamless laundry experience
-              for individuals, families, and businesses.
-            </p>
+        </div>
 
-            <div className="grid sm:grid-cols-2 gap-5 mt-10">
+        {/* Features */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-16">
 
-              {features.map((item, index) => (
-                <div
-                  key={index}
-                  className="
-                    bg-white
-                    p-5
-                    rounded-2xl
-                    border border-gray-100
-                    shadow-sm
-                  "
-                >
-                  <div className="w-11 h-11 rounded-xl bg-yellow-100 flex items-center justify-center text-yellow-600">
-                    {item.icon}
-                  </div>
+          {features.map((item, index) => (
+            <div
+              key={index}
+              className="
+                group
+                bg-white
+                rounded-3xl
+                border
+                border-yellow-100
+                p-8
+                transition-all
+                duration-300
+                hover:-translate-y-2
+                hover:shadow-xl
+              "
+            >
 
-                  <h3 className="mt-4 font-semibold text-gray-900">
-                    {item.title}
-                  </h3>
+              <div
+                className="
+                  w-14
+                  h-14
+                  rounded-2xl
+                  bg-yellow-100
+                  flex
+                  items-center
+                  justify-center
+                  text-yellow-600
+                  transition-transform
+                  duration-300
+                  group-hover:scale-110
+                "
+              >
+                {item.icon}
+              </div>
 
-                  <p className="mt-2 text-sm text-gray-600">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+              <h3 className="mt-6 text-xl font-semibold text-gray-900">
+                {item.title}
+              </h3>
+
+              <p className="mt-3 text-gray-600 leading-7">
+                {item.description}
+              </p>
 
             </div>
-
-          </div>
+          ))}
 
         </div>
 

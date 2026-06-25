@@ -1,9 +1,10 @@
 import {
   MapPin,
   Phone,
-  Mail,
   Clock3,
 } from "lucide-react";
+
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -96,32 +97,60 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          {/* Contact */}
+<div>
 
-            <h3 className="font-semibold text-lg">
-              Contact
-            </h3>
+  <h3 className="font-semibold text-lg">
+    Contact
+  </h3>
 
-            <div className="mt-5 space-y-4 text-gray-400">
+  <div className="mt-5 space-y-4 text-gray-400">
 
-              <div className="flex gap-3">
-                <MapPin size={18} />
-                <span>Bali, Indonesia</span>
-              </div>
+    <div className="flex gap-3">
+      <MapPin
+        size={18}
+        className="mt-1 flex-shrink-0"
+      />
+      <span>Bali, Indonesia</span>
+    </div>
 
-              <div className="flex gap-3">
-                <Phone size={18} />
-                <span>+62 xxx xxxx xxxx</span>
-              </div>
+    <a
+      href="https://wa.me/6285142910505"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex gap-3 hover:text-yellow-400 transition"
+    >
+      <Phone
+        size={18}
+        className="mt-1 flex-shrink-0"
+      />
+      <span>+62 851 4291 0505</span>
+    </a>
 
-              <div className="flex gap-3">
-                <Clock3 size={18} />
-                <span>Open Daily 08:00 - 20:00</span>
-              </div>
+    <a
+  href="https://www.instagram.com/fitwash.laundrybali"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex gap-3 hover:text-yellow-400 transition"
+>
+  <FaInstagram
+    size={18}
+    className="mt-1 flex-shrink-0"
+  />
+  <span>@fitwash.laundrybali</span>
+</a>
 
-            </div>
-
+          <div className="flex gap-3">
+            <Clock3
+              size={18}
+              className="mt-1 flex-shrink-0"
+            />
+            <span>Open Daily 24 Hours</span>
           </div>
+
+        </div>
+
+      </div>
 
         </div>
 

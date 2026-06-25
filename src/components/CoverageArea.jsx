@@ -62,22 +62,52 @@ export default function CoverageArea() {
           </div>
 
           {/* Image */}
-          <div>
+          {/* Map */}
+{/* Google Maps */}
+<div>
+  <div
+    className="
+      overflow-hidden
+      rounded-[32px]
+      border
+      border-yellow-100
+      shadow-xl
+    "
+  >
+    <iframe
+      title="Fit Wash Laundry Bali"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.9566574982077!2d115.22165978479464!3d-8.699782031444258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2411084ba7c05%3A0x701c234d88601f43!2sJl.%20Sidakarya%20No.14%2C%20Sesetan%2C%20Denpasar%20Selatan%2C%20Kota%20Denpasar%2C%20Bali%2080223!5e0!3m2!1sid!2sid!4v1782391050596!5m2!1sid!2sid"
+      className="w-full h-[350px] lg:h-[550px]"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="strict-origin-when-cross-origin"
+    />
+  </div>
 
-            <img
-              src="/images/bali-service-area.jpg"
-              alt="Laundry Service Bali"
-              className="
-                w-full
-                h-[350px]
-                lg:h-[550px]
-                object-cover
-                rounded-[32px]
-                shadow-xl
-              "
-            />
-
-          </div>
+  <a
+    href="https://maps.app.goo.gl/MfxMb5KuDMCUAX9YA"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      mt-6
+      inline-flex
+      items-center
+      justify-center
+      w-full
+      rounded-xl
+      bg-yellow-400
+      px-6
+      py-3
+      font-semibold
+      text-gray-900
+      transition
+      hover:bg-yellow-500
+    "
+  >
+    Open in Google Maps
+  </a>
+</div>
 
         </div>
 
