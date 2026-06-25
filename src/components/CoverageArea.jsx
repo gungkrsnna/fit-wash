@@ -2,14 +2,14 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function CoverageArea() {
   const areas = [
-    "Canggu",
-    "Seminyak",
-    "Kuta",
-    "Sanur",
-    "Ubud",
-    "Nusa Dua",
-    "Jimbaran",
     "Denpasar",
+    "Sanur",
+    "Kuta",
+    "Seminyak",
+    "Kerobokan",
+    "Batu Belig",
+    "Uma Alas",
+    "Dalung",
   ];
 
   return (

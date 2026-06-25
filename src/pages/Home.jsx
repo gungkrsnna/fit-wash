@@ -9,6 +9,7 @@ import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import FloatingWhatsapp from "../components/FloatingWhatsapp";
+import Packages from "../components/Packages";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <Services />
+      <Packages />
       <WhyChooseUs />
       <HowItWorks />
       <CoverageArea />

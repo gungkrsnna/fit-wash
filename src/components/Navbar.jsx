@@ -34,32 +34,37 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-10">
 
-  <a href="#home" className="hover:text-yellow-500 transition">
-    Home
-  </a>
+            <a href="#home" className="hover:text-yellow-500 transition">
+              Home
+            </a>
 
-  <a href="#services" className="hover:text-yellow-500 transition">
-    Services
-  </a>
+            <a href="#services" className="hover:text-yellow-500 transition">
+              Services
+            </a>
 
-  <a href="#process" className="hover:text-yellow-500 transition">
-    How It Works
-  </a>
+            <a href="#process" className="hover:text-yellow-500 transition">
+              How It Works
+            </a>
 
-  <a href="#coverage" className="hover:text-yellow-500 transition">
-    Coverage
-  </a>
+            <a href="#coverage" className="hover:text-yellow-500 transition">
+              Coverage
+            </a>
 
-  <a href="#contact" className="hover:text-yellow-500 transition">
-    Contact
-  </a>
+            <a href="#contact" className="hover:text-yellow-500 transition">
+              Contact
+            </a>
 
-</div>
+          </div>
 
-          {/* Desktop CTA */}
-          <button className="hidden lg:block bg-yellow-400 hover:bg-yellow-500 px-5 py-3 rounded-xl font-semibold transition">
-            Schedule Pickup
-          </button>
+{/* Desktop CTA */}
+<a
+  href="https://wa.me/6285142910505"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden lg:inline-flex items-center justify-center bg-yellow-400 hover:bg-yellow-500 px-5 py-3 rounded-xl font-semibold transition"
+>
+  Schedule Pickup
+</a>
 
           {/* Mobile Toggle */}
           <button
@@ -81,15 +86,23 @@ export default function Navbar() {
 
              <a href="#home">Home</a>
 
-  <a href="#services">Services</a>
+            <a href="#services">Services</a>
 
-  <a href="#process">How It Works</a>
+            <a href="#process">How It Works</a>
 
-  <a href="#coverage">Coverage</a>
+            <a href="#coverage">Coverage</a>
 
-  <a href="#contact">Contact</a>
+            <a href="#contact">Contact</a>
 
-            <button className="bg-yellow-400 hover:bg-yellow-500 py-3 rounded-xl font-semibold">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://wa.me/6285142910505",
+                  "_blank"
+                )
+              }
+              className="bg-yellow-400 hover:bg-yellow-500 transition px-6 py-3 rounded-xl font-semibold"
+            >
               Schedule Pickup
             </button>
 

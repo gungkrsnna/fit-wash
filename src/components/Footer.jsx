@@ -115,11 +115,6 @@ export default function Footer() {
               </div>
 
               <div className="flex gap-3">
-                <Mail size={18} />
-                <span>hello@fitwashbali.com</span>
-              </div>
-
-              <div className="flex gap-3">
                 <Clock3 size={18} />
                 <span>Open Daily 08:00 - 20:00</span>
               </div>

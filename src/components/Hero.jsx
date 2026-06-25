@@ -1,61 +1,79 @@
 export default function Hero() {
   return (
-    <section  id="home" className="scroll-mt-28 bg-[#FFFDF5] py-16 lg:py-24">
-      <div className="container mx-auto px-5 lg:px-8">
+    <section
+      id="home"
+      className="hero-section relative overflow-hidden"
+    >
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#FFFDF5] via-[#FFFDF5]/80 to-transparent" />
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative mx-auto max-w-[1440px] min-h-[720px] flex items-center px-6 lg:px-20">
 
-          {/* Content */}
-          <div className="order-2 lg:order-1">
+        {/* Content */}
+        <div className="max-w-[560px]">
 
-            <span className="inline-flex items-center bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-medium">
-              Laundry, Dry Cleaning & Pickup Service in Bali
-            </span>
+          <span className="inline-flex items-center rounded-full bg-yellow-100 px-5 py-2 text-sm font-semibold text-yellow-700">
+            FIT WASH
+          </span>
 
-            <h1 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-  Professional Laundry
-  <br />
-  Service in
-  <span className="text-yellow-500"> Bali</span>
-</h1>
+          <h1 className="mt-6 text-5xl font-bold leading-tight text-gray-900 md:text-6xl lg:text-7xl">
+            Laundry Express
+            <br />
+            in
+            <span className="text-yellow-500"> Bali</span>
+          </h1>
 
-            <p className="mt-6 text-base md:text-lg text-gray-600 max-w-xl leading-relaxed">
-  Fit Wash Laundry Bali provides professional laundry,
-  dry cleaning, and pickup & delivery services for
-  residents, villas, hotels, restaurants, and businesses
-  across Bali.
-</p>
+          <p className="mt-8 text-lg leading-9 text-gray-700">
+            FIT Wash Laundry Express Bali provides premium laundry services
+            that prioritize speed and quality. We're ready to meet all your
+            laundry needs with free pick-up and delivery so you can spend more
+            time doing what matters most.
+          </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
-              <button className="bg-yellow-400 hover:bg-yellow-500 transition px-6 py-3 rounded-xl font-semibold">
-                Schedule Pickup
-              </button>
-
-              <button className="border border-gray-300 hover:bg-gray-50 transition px-6 py-3 rounded-xl">
-                Explore Services
-              </button>
-
-            </div>
-
-          </div>
-
-          {/* Image */}
-          <div className="order-1 lg:order-2">
-
-            <img
-              src="/images/hero-laundry.jpg"
-              alt="Laundry Service"
+            <a
+              href="https://wa.me/6285142910505?text=Hello%20Fit%20Wash,%20I%20would%20like%20to%20schedule%20a%20laundry%20pickup."
+              target="_blank"
+              rel="noopener noreferrer"
               className="
-                w-full
-                h-[280px]
-                md:h-[450px]
-                lg:h-[600px]
-                object-cover
-                rounded-3xl
-                shadow-xl
+                inline-flex
+                items-center
+                justify-center
+                rounded-xl
+                bg-yellow-400
+                px-8
+                py-4
+                font-semibold
+                text-gray-900
+                shadow-lg
+                transition
+                hover:bg-yellow-500
               "
-            />
+            >
+              Whatsapp
+            </a>
+
+            <button
+              href="https://wa.me/6285142910505?text=Hello%20Fit%20Wash,%20I%20would%20like%20to%20schedule%20a%20laundry%20pickup."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                rounded-xl
+                border
+                border-white/80
+                bg-white/80
+                px-8
+                py-4
+                font-semibold
+                text-gray-900
+                backdrop-blur-md
+                transition
+                hover:bg-white
+              "
+            >
+              Book Now
+            </button>
 
           </div>
 

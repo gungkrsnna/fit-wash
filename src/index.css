@@ -10,3 +10,26 @@ body {
 section {
   scroll-margin-top: 120px;
 }
+
+.hero-section {
+  background-image: url("../public/images/background-hero-new.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  min-height: 720px;
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    background-position: 75% center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-image: url("../public/images/background-hero-new.PNG");
+    background-position: center;
+    background-size: cover;
+    min-height: 760px;
+  }
+}
